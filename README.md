@@ -22,10 +22,10 @@ explore-google-adk/
 ## Requirements
 
 Before you begin, ensure you have:
+
 - **uv**: Python package manager (used for all dependency management in this project) - [Install](https://docs.astral.sh/uv/getting-started/installation/) ([add packages](https://docs.astral.sh/uv/concepts/dependencies/) with `uv add <package>`)
 - **Google Cloud SDK**: For GCP services - [Install](https://cloud.google.com/sdk/docs/install)
 - **make**: Build automation tool - [Install](https://www.gnu.org/software/make/) (pre-installed on most Unix-based systems)
-
 
 ## Quick Start
 
@@ -37,25 +37,25 @@ make install && make playground
 
 ## Commands
 
-| Command              | Description                                                                                 |
-| -------------------- | ------------------------------------------------------------------------------------------- |
-| `make install`       | Install dependencies using uv                                                               |
-| `make playground`    | Launch local development environment                                                        |
-| `make lint`          | Run code quality checks                                                                     |
-| `make test`          | Run unit and integration tests                                                              |
-| `make deploy`        | Deploy agent to Agent Engine                                                                |
-| `make register-gemini-enterprise` | Register deployed agent to Gemini Enterprise                                  |
+| Command                           | Description                                  |
+| --------------------------------- | -------------------------------------------- |
+| `make install`                    | Install dependencies using uv                |
+| `make playground`                 | Launch local development environment         |
+| `make lint`                       | Run code quality checks                      |
+| `make test`                       | Run unit and integration tests               |
+| `make deploy`                     | Deploy agent to Agent Engine                 |
+| `make register-gemini-enterprise` | Register deployed agent to Gemini Enterprise |
 
 For full command options and usage, refer to the [Makefile](Makefile).
 
 ## 🛠️ Project Management
 
-| Command | What It Does |
-|---------|--------------|
-| `uvx agent-starter-pack enhance` | Add CI/CD pipelines and Terraform infrastructure |
-| `uvx agent-starter-pack setup-cicd` | One-command setup of entire CI/CD pipeline + infrastructure |
-| `uvx agent-starter-pack upgrade` | Auto-upgrade to latest version while preserving customizations |
-| `uvx agent-starter-pack extract` | Extract minimal, shareable version of your agent |
+| Command                             | What It Does                                                   |
+| ----------------------------------- | -------------------------------------------------------------- |
+| `uvx agent-starter-pack enhance`    | Add CI/CD pipelines and Terraform infrastructure               |
+| `uvx agent-starter-pack setup-cicd` | One-command setup of entire CI/CD pipeline + infrastructure    |
+| `uvx agent-starter-pack upgrade`    | Auto-upgrade to latest version while preserving customizations |
+| `uvx agent-starter-pack extract`    | Extract minimal, shareable version of your agent               |
 
 ---
 
@@ -79,3 +79,7 @@ See the [deployment guide](https://googlecloudplatform.github.io/agent-starter-p
 
 Built-in telemetry exports to Cloud Trace, BigQuery, and Cloud Logging.
 See the [observability guide](https://googlecloudplatform.github.io/agent-starter-pack/guide/observability) for queries and dashboards.
+
+{
+"project_id": "buoyant-aloe-220514",
+}
