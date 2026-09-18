@@ -188,6 +188,10 @@ testem.log
 Thumbs.db
 *.vscode*
 
+# ADK local dev session/artifact state (can embed live OAuth tokens)
+.adk/
+**/.adk/
+
 # Starter pack specific
 .persist_vector_store
 tests/load_test/.results/*.html
